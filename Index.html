@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchExchange | Official GitHub Page</title>
+    <style>
+        /* বেসিক রিসেট এবং ফন্ট সেটআপ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0A0B18 0%, #15172E 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* গ্লাস মরফিজম (Glassmorphism) ডিজাইনের কন্টেইনার */
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 50px 30px;
+            border-radius: 24px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #C6952E 0%, #EBCB82 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+            box-shadow: 0 10px 30px rgba(198, 149, 46, 0.3);
+        }
+
+        .icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #ffffff;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #9A9CC0;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        /* সুন্দর কল-টু-অ্যাকশন (CTA) বাটন */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #C6952E 0%, #96611A 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 36px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(150, 97, 26, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(150, 97, 26, 0.5);
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #5C5F79;
+        }
+
+        /* ফেড-ইন অ্যানিমেশন */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* রেসপন্সিভ ডিজাইন */
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+            .btn { padding: 14px 28px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- লোগো আইকন (YouTube প্লে বাটনের মতো) -->
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        </div>
+        
+        <h1>Welcome to WatchExchange</h1>
+        
+        <p>Thank you for visiting our GitHub page! To learn more about our app, earn points, and promote your YouTube videos to a real community, please visit our official website.</p>
+        
+        <!-- মূল ওয়েবসাইটে যাওয়ার লিংক -->
+        <a href="https://youtubewatchexchange.pages.dev/" class="btn">Visit Official Website</a>
+
+        <div class="footer-text">
+            © 2026 WatchExchange. Developed by Al Imran.
+        </div>
+    </div>
+
+</body>
+</html>
